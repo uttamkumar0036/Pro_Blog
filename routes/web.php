@@ -14,10 +14,6 @@ use App\Http\Controllers\BlogController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 
 
 //fontent route
@@ -27,7 +23,7 @@ Route::get('/contact', [BlogController::class, 'Contact'])->name('Contact');
 
 Route::get('/department',[BlogController::class, 'Department'])->name('Department');
 Route::get('/doctore',[BlogController::class, 'Doctore'])->name('Doctore');
-Route::get('/home',[BlogController::class, 'Home'])->name('Home');
+Route::get('/',[BlogController::class, 'Home'])->name('Home');
 Route::get('/service',[BlogController::class, 'Service'])->name('Service');
 Route::get('/single_blog',[BlogController::class, 'SingleBlog'])->name('SingleBlog');
 Route::get('/single_department',[BlogController::class, 'SingleDepartment'])->name('SingleDepartment');
