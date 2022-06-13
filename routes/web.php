@@ -15,7 +15,7 @@ use App\Http\Controllers\BlogController;
 */
 
 Route::get('/', function () {
-    return view('Fontent.Home');
+    return view('Fontent.Master');
 });
 
 
